@@ -3,6 +3,7 @@
 html,
 nav > button {
     font-family: "Noto Sans";
+    color: #F5F0E6;
 }
 
 body {
@@ -30,7 +31,32 @@ nav {
 
     padding: 12px 0;
     height: 36px;
-    
-    border-bottom: 1px solid rgb(199, 199, 199);
-    background-color: darkseagreen;
+
+    background-color: #6B8F71;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    background-color: #22211E;
+}
+
+.restaurant-name {
+    font-size: 36px;
+    text-align: center;
+}
+
+.restaurant-slogan {
+    font-size: 18px;
+    text-align: center;
+}
+
+.homepage-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
 }
