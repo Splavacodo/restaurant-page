@@ -3,6 +3,7 @@ import foodImg from "../public/images/restaurant-homepage-img.jpg";
 function loadHomePage() {
     let contentContainer = document.querySelector("#content"); 
     contentContainer.style["position"] = "relative";
+    contentContainer.replaceChildren([]);
 
     let homepageImg = document.createElement("img");
     homepageImg.src = foodImg;

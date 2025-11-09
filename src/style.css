@@ -2,6 +2,7 @@
 
 html,
 nav > button {
+    box-sizing: border-box;
     font-family: "Noto Sans";
     color: #F5F0E6;
 }
@@ -9,6 +10,7 @@ nav > button {
 body {
     margin: 0;
     padding: 0;
+    background-color: #22211E;
 }
 
 nav > button {
@@ -32,7 +34,8 @@ nav {
     padding: 12px 0;
     height: 36px;
 
-    background-color: #6B8F71;
+    background-color: #1C1B19;
+    border-bottom: 1px solid #303030;
 }
 
 #content {
@@ -59,4 +62,37 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    padding: 24px;
+    background-color: #22211E;
+}
+
+.menu-header {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-item-description {
+    font-size: 14px;
+}
+
+.menu-items-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 600px));
+    gap: 24px;
+    padding: 24px;
 }
